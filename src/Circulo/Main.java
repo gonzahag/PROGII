@@ -12,7 +12,7 @@ public class Main {
 
         Cilindro cilindro1 = new Cilindro(10, 10);
         System.out.println(cilindro1.getAltura());
-        System.out.println(cilindro1.getVolumen(circulo1));
+        System.out.println(cilindro1.getVolumen());
 
     }
 

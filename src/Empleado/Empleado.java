@@ -31,7 +31,7 @@ public class Empleado {
     }
 
     public String getNombreCompleto(){
-        return nombre+" "+apellido;
+        return getNombre()+" "+getApellido();
     }
 
     public void setSalario(int salario) {

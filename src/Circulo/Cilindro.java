@@ -26,8 +26,8 @@ public class Cilindro extends Circulo {
         this.altura = altura;
     }
 
-    public double getVolumen(Circulo circulo){
-        return circulo.getArea() * altura;
+    public double getVolumen(){
+        return getArea() * altura;
     }
 }
 
