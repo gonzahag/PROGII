@@ -2,8 +2,12 @@ package Circulo;
 
 public class Circulo {
 
-    private double radio;
-    private String color;
+    protected double radio = 1;
+    protected String color = "Rojo";
+
+    public Circulo(){
+
+    }
 
     public Circulo(double radio){
             this.radio = radio;

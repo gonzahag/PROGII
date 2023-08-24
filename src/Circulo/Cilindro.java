@@ -4,6 +4,10 @@ public class Cilindro extends Circulo {
 
     private double altura = 1;
 
+
+    public Cilindro(){
+    }
+
     public Cilindro(double radio){
         super(radio);
     }
