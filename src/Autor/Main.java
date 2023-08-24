@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String args[]){
 
-        Autor autor1 = new Autor("Gonzalo", "gonzahag@gmail.com", "M");
+        Autor autor1 = new Autor("Gonzalo", "gonza@gmail.com", "M");
 
         System.out.println(autor1.toString());
 
