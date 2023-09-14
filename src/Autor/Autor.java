@@ -30,9 +30,12 @@ public class Autor {
 
     @Override
     public String toString() {
-        return "Autor[Nombre = "+nombre+", Email = "+email+", Género = "+genero+"]";
+        return "Autor{" +
+                "nombre='" + nombre + '\'' +
+                ", email='" + email + '\'' +
+                ", genero='" + genero + '\'' +
+                '}';
     }
-
 
 
 }
