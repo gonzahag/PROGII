@@ -2,10 +2,12 @@ package TADs;
 
 public class List {
 
-    private Node primerNodo;
+    public Node primerNodo;
+    public int tamano;
 
     public List(Node node){
         this.primerNodo = node;
+        this.tamano = 0;
     }
 
     public List(){
@@ -19,6 +21,7 @@ public class List {
         }
         elemento.next = primerNodo;
         primerNodo = elemento;
+        this.tamano++;
     }
 
     public void agregarFinal(int valor){
@@ -35,6 +38,7 @@ public class List {
         }
 
         ultimo.next = elemento;
+        this.tamano++;
 
     }
 
@@ -43,6 +47,11 @@ public class List {
     public void agregarMedio(int valor, int ubicacion){
 
         Node elemento = new Node(valor);
+
+        if (this.tamano < ubicacion){
+            System.out.println("Se ingresó un índice fuera del rango.");
+            return;
+        }
 
         if(this.primerNodo == null){
             primerNodo = elemento;
@@ -60,6 +69,8 @@ public class List {
 
         elemento.next = auxiliar.next;
         auxiliar.next = elemento;
+
+        this.tamano++;
 
     }
 
@@ -84,14 +95,14 @@ public class List {
     public void imprimir() {
             Node aux = this.primerNodo;
 
-            while(aux.next != null){
+            for (int i = 0; i<=this.tamano; i++){
                 System.out.println(aux.data);
                 aux = aux.next;
             }
 
-            if (aux.next==null){
+            /*if (aux.next==null){
                 System.out.println(aux.data);
-            }
+            }*/
 
     }
 

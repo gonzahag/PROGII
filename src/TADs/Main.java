@@ -9,7 +9,7 @@ public class Main {
         lista1.agregarInicio(10);
         lista1.agregarFinal(12);
         lista1.agregarInicio(9);
-        lista1.agregarMedio(11, 2);
+        lista1.agregarMedio(11, 4);
 
         lista1.imprimir();
 
