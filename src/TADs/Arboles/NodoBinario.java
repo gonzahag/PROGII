@@ -15,8 +15,5 @@ public class NodoBinario {
     }
 
 
-    @Override
-    public String toString() {
-        return this.valor;
-    }
+
 }

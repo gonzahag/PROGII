@@ -75,7 +75,7 @@ public class ArbolBinario {
     }
 
 
-    /*private void anchura (NodoBinario nodo){
+    private void anchura (NodoBinario nodo){
 
         ColaBusquedaAnchura cola = new ColaBusquedaAnchura();
         cola.encolar(nodo);
@@ -95,7 +95,7 @@ public class ArbolBinario {
         }
 
     }
-*/
+
     private NodoBinario agregarRecursivo(NodoBinario nodo, int valor){
 
         if (nodo == null){
